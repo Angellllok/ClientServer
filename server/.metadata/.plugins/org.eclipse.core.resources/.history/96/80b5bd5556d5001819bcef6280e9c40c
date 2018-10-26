@@ -1,0 +1,16 @@
+
+public class Main {
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.setName("johnny");
+		
+		Programmer pr = new Programmer();
+		pr.setName("ira");
+		pr.setLang("java");
+		
+		Person p1 = new Programmer();
+		
+		ArrayList<Person> people = new ArrayList<Person>();
+	}
+}
+

@@ -1,0 +1,7 @@
+
+public class Dog {
+	@Override
+	public void Say() {
+		System.out.println("gav");
+	}
+}

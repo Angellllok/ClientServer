@@ -1,0 +1,27 @@
+
+public class Circle {
+	private double radius;
+	
+	// getter & setters -> selectors
+	// getter
+	public double getRadius() {
+		return radius;
+	}
+	
+	//setter
+	public void setRadius(double value) {
+		if (value <= 0) {
+			throws new Exception("Invalid radius value. ")
+		}
+		
+		this.radius = value;
+	}
+	
+	public double getDiametr() {
+		return 2 * radius;
+	}
+	
+	public double getLength() {
+		return 2 * radius * Math.PI;
+	}
+}

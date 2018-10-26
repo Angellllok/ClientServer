@@ -1,0 +1,9 @@
+
+public class Cat implements Animal {
+
+	@Override
+	public void Say() {
+		System.out.println("meow");
+	}
+
+}

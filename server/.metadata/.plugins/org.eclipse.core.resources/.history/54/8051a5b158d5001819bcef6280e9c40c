@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Main  {
+	public static void main(String[] args) throws Exception {
+		Circle c = new Circle();
+		c.setRadius(10);
+		
+	}
+}
+

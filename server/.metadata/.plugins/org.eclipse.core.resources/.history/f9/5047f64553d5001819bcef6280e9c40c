@@ -1,0 +1,12 @@
+
+public class Circle {
+	private double radius;
+	
+	public double getDiametr() {
+		return 2 * radius;
+	}
+	
+	public double getLength() {
+		return 2 * radius * Math.PI;
+	}
+}

@@ -1,0 +1,67 @@
+
+
+
+public class MyList1 {
+	private Node head;
+	private Node tail;
+	private Node current;
+	
+	public void PushBack(int value) {
+		if (head == null) {
+			head = new Node(value);
+			tail = head;
+			return;
+		}
+		
+		Node newNode = new Node(value);
+		tail.setNext(newNode);
+		tail = tail.getNext();
+	}
+	
+	public int PopFront() {
+		int ret;
+		if (head == tail) {
+			ret = head.getValue();
+			head = null;
+			tail = null;
+			
+			return ret;
+		}
+		
+		Node oldNode = head;
+		head = head.getNext();
+		oldNode.setNext(null);
+		return oldNode.getValue();
+	}
+	
+	private class Node {
+		private int value;
+		private Node next;
+		
+		public Node(int value) {
+			this.value = value;
+			this.next = null;
+		}
+		
+		public Node(int value, Node next) {
+			this.value = value;
+			this.next = next;
+		}
+		
+		public int getValue() {
+			return value;
+		}
+		
+		public void setValue(int value) {
+			this.value = value;
+		}
+		
+		public Node getNext() {
+			return next;
+		}
+		
+		public void setNext(Node next) {
+			this.next = next;
+		}
+	}
+}

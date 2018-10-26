@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args) {
+		Animal[] zoo = new Animal[] {
+			new Cat(), 
+			new Dog(), 
+			new Cat()
+		};
+		
+		for (Animal animal: zoo) {
+			
+		}
+	}
+}
+

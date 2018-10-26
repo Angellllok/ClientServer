@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Main  {
+	public static void main(String[] args) throws Exception {
+		Circle c1 = new Circle();
+		Circle c2 = new Circle();
+		
+		System.out.println(c1.getLength());
+	}
+}
+

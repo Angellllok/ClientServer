@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class Main  {
+	public static void main(String[] args) throws Exception {
+		Circle c1 = new Circle(1); // 6.28
+		Circle c2 = new Circle(2); // 12.56
+		Circle c3 = c2;
+		c3.setRadius(4);
+		
+		System.out.println(c1.getLength());
+		System.out.println(c2.getLength());
+		System.out.println(c3.getLength());
+	}
+}
+
